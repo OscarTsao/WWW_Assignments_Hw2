@@ -237,6 +237,8 @@
         recording = recordingToggle.classList.contains("active");
         if (recording) {
           recordedMoves = [];
+          // Record the starting position
+          recordedMoves.push({ x: playerPosition.x, y: playerPosition.y });
         }
       });
 
