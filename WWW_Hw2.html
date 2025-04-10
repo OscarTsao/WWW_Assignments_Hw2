@@ -650,6 +650,7 @@
 
       /* ------------------- Start Game ------------------- */
       startBtn.addEventListener("click", () => {
+        recordedMoves = []
         mazeSize = parseInt(difficultySelect.value);
         generateMaze(mazeSize);
         renderMaze();
